@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.2" icons="true" automaticImage="PNG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="java.awt.event.InvocationEvent" project="Test Arena" 
+    file="C:/Program Files/Java/jre1.8.0_144/lib/rt.jar" binary="true" label="invocationEvent" type="class" 
+    autoSize="false">    
+    <position height="641" width="116" x="0" y="0"/>    
+    <execution id="2">      
+      <position height="147" width="0" x="0" y="474"/>    
+    </execution>  
+  </object>  
+  <object id="5" language="java" name="javax.swing.Timer" project="Test Arena" 
+    file="C:/Program Files/Java/jre1.8.0_144/lib/rt.jar" binary="true" label="timer" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="4">      
+      <position height="105" width="0" x="0" y="495"/>    
+    </execution>  
+  </object>  
+  <object id="8" language="java" name="arena.BattleBotArena" project="Test Arena January 2018" 
+    file="/Test Arena January 2018/src/arena/BattleBotArena.java" binary="false" label="battleBotArena" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="7">      
+      <position height="63" width="0" x="0" y="516"/>    
+    </execution>  
+  </object>  
+  <object id="11" language="java" name="bots.Drone" project="Test Arena January 2018" 
+    file="/Test Arena January 2018/src/bots/Drone.java" binary="false" label="drone" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="10">      
+      <position height="21" width="0" x="0" y="537"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="fireActionPerformed(java.awt.event.ActionEvent):void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="6" operation="actionPerformed(java.awt.event.ActionEvent):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="7"/>  
+  </message>  
+  <message id="9" operation="getMove(arena.BotInfo,boolean,arena.BotInfo[],arena.BotInfo[],arena.Bullet[]):int" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>
+</sequence-diagram>
