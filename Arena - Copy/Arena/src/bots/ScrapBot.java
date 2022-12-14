@@ -1,9 +1,8 @@
 package bots;
+
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Image;
-import java.sql.Time;
-import java.time.LocalDateTime;
 import java.util.StringTokenizer;
 
 
@@ -12,7 +11,7 @@ import arena.BotInfo;
 import arena.Bullet;
 
 public class ScrapBot extends Bot {
-
+;
     private double closeBotY = 0;
     private double closeBotX = 0;
     int count = 0;
@@ -21,16 +20,7 @@ public class ScrapBot extends Bot {
     private int lastSpinMove = BattleBotArena.FIREUP;
     private int frameCount = 0;
 
-    public String[] imageNames(){
-        String[] paths = {"scrap.png"};
-        return paths;
-    }
-
-    public void loadedImages(Image[] images)
-	{
-		if (images != null && images.length > 0)
-			image = images[0];
-    }
+    
     
    
 
@@ -250,7 +240,7 @@ public class ScrapBot extends Bot {
         frameCount = newFrame;
     }
 
-
+    
     /*
      * Helper method to calculate the closest bot to the current bot.
      * @param me is the current bot
@@ -296,10 +286,17 @@ public class ScrapBot extends Bot {
         double distance = Math.sqrt((xDist * xDist) + (yDist * yDist));
         return distance;
     }
-    @Override
-    public void newRound() {
-        // TODO Auto-generated method stub
-        
+
+
+    public String[] imageNames(){
+        String[] paths = {"scrap.png"};
+        return paths;
+    }
+
+    public void loadedImages(Image[] images)
+	{
+		if (images != null && images.length > 0)
+			image = images[0];
     }
 
     @Override
@@ -311,35 +308,40 @@ public class ScrapBot extends Bot {
             g.setColor(Color.gray);
             g.fillOval(x, y, Bot.RADIUS*2, Bot.RADIUS*2);
         }
-        
+
     }
+
 
     @Override
     public String getName() {
-        
         return "Scrap";
     }
 
     @Override
     public String getTeamName() {
-        // TODO Auto-generated method stub
+        // TDO Auto-generated method stub
         return null;
     }
 
     @Override
     public String outgoingMessage() {
-        // TODO Auto-generated method stub
+        // TOD Auto-generated method stub
         return null;
     }
 
     @Override
     public void incomingMessage(int botNum, String msg) {
+        // TDO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void newRound() {
         // TODO Auto-generated method stub
         
     }
+
 }
 
-    
-    
-    
 
+    
